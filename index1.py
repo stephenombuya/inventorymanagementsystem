@@ -26,25 +26,6 @@ db_config = {
     'database': 'stock'
 }
 
-# # Load environment variables from .env file (optional: specify path)
-# load_dotenv('C:/Users/Michie King/OneDrive/Desktop/Inventory Management/db.env')
-# # load_dotenv('/path/to/your/.env')
-
-
-# db_config = {
-#     'host': os.environ.get('host', 'localhost'),
-#     'user': os.environ.get('username', 'username'),
-#     'password': os.environ.get('password','password'),
-#     'database': os.environ.get('database','database'),
-# }
-
-# print(os.environ.get('DB_PASSWORD'))
-
-db_connection = mysql.connector.connect(**db_config)
-
-# ... your application code
-
-
 # Create a MySQL database connection
 db_connection = mysql.connector.connect(**db_config)
 
